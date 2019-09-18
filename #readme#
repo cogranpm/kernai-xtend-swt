@@ -1,0 +1,10 @@
+this project is based on a windowbuilder template to get
+eclipse databinding working and swt this is a non rcp attempt
+wnat to make it a java project jigsaw compatible so eventually can deploy with minimal jre included
+
+
+xtend overview:
+lamdas
+property style instead of setter
+extension methods:
+operator overloading: use certain name of a function
