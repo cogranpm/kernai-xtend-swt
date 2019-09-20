@@ -42,7 +42,7 @@ class XMainWindow extends ApplicationWindow{
 		var container = new Composite(parent, SWT.NONE)
 		container.layout = new FillLayout(SWT.HORIZONTAL)
 		var lblLabel = new Label(container, SWT.NONE)
-		lblLabel.text = "Kernai"
+		lblLabel.text = "Kernai 1"
 		return container
 		
 	}

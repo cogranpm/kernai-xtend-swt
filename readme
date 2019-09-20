@@ -4,3 +4,43 @@ wnat to make it a java project jigsaw compatible so eventually can deploy with m
 
 
 xtend overview:
+lamdas
+property style instead of setter
+extension methods:
+operator overloading: use certain name of a function
+
+@Data annotation
+creates an immutable value class
+gettter methods
+hashcode and equals
+tostring
+constructor with all fields
+
+@Data class looks like:
+@Data class Movie {
+      String title
+      int year
+      double rating
+      long numberOfVotes
+      Set<String> categories
+}
+
+how about a regular class:
+
+class Movies {
+
+      val someImmutableVar
+      //val means final
+      
+
+}
+
+xtend runtime library:
+basically have to look in the source code: https://github.com/eclipse/xtext-lib/blob/master/org.eclipse.xtext.xbase.lib/src/org/eclipse/xtext/xbase/lib/CollectionLiterals.java
+seems to have stuff like newImmutableMap()
+immutable list:val a = #['Hello', 'World'] or for an array: val String[] a = #['Hello', 'World']
+immutable set: val a =  #{'Hello', 'World'}
+immutable map: val a = #{'a' -> 1, 'b' -> 2}
+
+
+
